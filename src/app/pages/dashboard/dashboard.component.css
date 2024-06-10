@@ -1,0 +1,306 @@
+
+Overall header styles
+.header-area {
+  background-color: #f0f0f0; 
+  padding: 1rem 0; 
+}
+
+
+.header-sticky {
+  position: fixed;
+  background: #fe8d00;
+  left: 0;
+  top: 0;
+  width: 101%;
+  z-index: 100; 
+}
+
+/* Container for responsive layout */
+.container {
+  width: 100%;
+  max-width: 960px; /* Example max-width for responsiveness */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Row for horizontal layout within the container */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  margin: 0 -15px; /* Remove default horizontal gutters */
+  padding: 0 15px; /* Add custom horizontal padding */
+}
+
+/* Full-width column for the navigation bar */
+.col-12 {
+  width: 100%;
+  padding: 0; /* Remove default column padding */
+}
+
+/* Navigation bar styles */
+.main-nav {
+  display: flex;
+  align-items: center; /* Align navigation items vertically */
+  justify-content: flex-end; /* Right-align navigation items (optional) */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo styling */
+.logo {
+  width: 100px; /* Set your desired logo width */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+    left: 0;
+}
+.nav{
+  display: flex;
+  list-style-type: none;
+  width: 0;
+}
+/* Navigation link styles */
+.nav li a {
+  display: inline-block;
+  padding: 1rem; /* Adjust padding as needed */
+  color: #333; /* Dark gray text */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.2s ease-in-out; /* Smooth hover transition */
+}
+
+.nav li a:hover {
+  color: #007bff; /* Blue hover color */
+}
+
+/* User icon styling (assuming Font Awesome for `fa-solid fa-user`) */
+.user i {
+  font-size: 1.2rem; /* Adjust icon size as needed */
+  color: #000000; /* Dark gray icon */
+}
+
+/* Language dropdown container */
+.language {
+  position: relative; /* Enable positioning of the dropdown */
+}
+
+/* Language link styles */
+.language a {
+  display: inline-block;
+  padding: 1rem; /* Adjust padding as needed */
+  color: #333; /* Dark gray text */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.2s ease-in-out; /* Smooth hover transition */
+}
+
+.language a:hover {
+  color: #007bff; /* Blue hover color */
+}
+
+/* Language dropdown styles */
+.language-dropdown {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the link */
+  left: 0;
+  background-color: #fff; /* White background */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Initially hide the dropdown */
+}
+
+/* Language dropdown items */
+.language-dropdown li {
+  padding: 0.5rem 1rem;
+}
+
+.language-dropdown li a {
+  display: block;
+  color: #333; /* Dark gray text */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.2s ease-in-out; /* Smooth hover transition */
+}
+
+.language-dropdown li a:hover {
+  color: #007bff; /* Blue hover color */
+}
+
+/* Show/hide functionality for the language dropdown (example using JavaScript) */
+.language:hover .language-dropdown {
+  display: block; /* Show the dropdown on hover */
+}
+.image-text .image img{
+  max-width: 102%;
+  
+    height: auto;
+    margin-top: 64px;
+    position: relative;
+    margin-left: -9px;
+   
+}
+.search-container{
+  border: 2px ;
+  
+  position: absolute;
+  
+}
+/* card */
+.text p{
+  margin-top: -58px;
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 241px;
+}
+.Rechercher{
+  margin-top: -24px;
+  position: absolute;
+  text-align: center;
+  padding-left: 38%;
+  display: flex;
+  max-width: 400px; 
+ 
+}
+
+#search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #fe8d00; 
+  color: #fff; 
+  border: none;
+  border-radius: 0 5px 5px 0; 
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.cards{
+
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 9%;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: center;
+gap: 54px;
+
+}
+
+
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card img {
+  width: 20%;
+  height: auto;
+
+}
+
+.card-content {
+  padding: 20px 0;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-content p {
+  color: #666;
+}
+.icon{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+.image-phone {
+  display: flex;
+}
+
+.left-image {
+  flex: 1;
+  text-align: left;
+}
+
+.right-image {
+  flex: 1;
+  text-align: right;
+}
+.image-tel{
+  text-align: center;
+}
+.text-par{
+  text-align: center;
+}
+.local .icon-local{
+  position: absolute;
+  left: 29%;
+  padding-top: 11%;
+  font-size: 62px;
+}
+.sale .icon-sale{
+  position: absolute;
+  right: 17%;
+  font-size: 62px;
+  padding-top: 11%;
+}
+.Delivery .icon-truck{
+  position: absolute;
+  left: 29%;
+  padding-top: 11%;
+  font-size: 62px;
+}
+.Product .icon-product{
+  position: absolute;
+  right: 17%;
+  font-size: 62px;
+  padding-top: 11%;
+
+}
+.tout{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 54px;
+}
+
+
+
+
+
+
+
